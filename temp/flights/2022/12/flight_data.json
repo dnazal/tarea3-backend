@@ -1,0 +1,212 @@
+[
+  {
+    "flightNumber": "84155",
+    "originIATA": "CBR",
+    "destinationIATA": "ORN",
+    "airline": "Qatar",
+    "aircraftID": "4ZE8W9E4SUXK16553"
+  },
+  {
+    "flightNumber": "26815",
+    "originIATA": "LAS",
+    "destinationIATA": "BEL",
+    "airline": "American",
+    "aircraftID": "3FC4YADJZFSY14451"
+  },
+  {
+    "flightNumber": "63757",
+    "originIATA": "ATL",
+    "destinationIATA": "BSB",
+    "airline": "British Airways",
+    "aircraftID": "H7HJ6STJS1U480112"
+  },
+  {
+    "flightNumber": "30457",
+    "originIATA": "BOG",
+    "destinationIATA": "XIY",
+    "airline": "American",
+    "aircraftID": "C6RXS13SAJBE33234"
+  },
+  {
+    "flightNumber": "32266",
+    "originIATA": "HKG",
+    "destinationIATA": "VCP",
+    "airline": "LATAM",
+    "aircraftID": "JPDEML1R94VR51982"
+  },
+  {
+    "flightNumber": "48522",
+    "originIATA": "CPH",
+    "destinationIATA": "TIJ",
+    "airline": "Emirates",
+    "aircraftID": "KSNWFYY6DCHX33689"
+  },
+  {
+    "flightNumber": "76797",
+    "originIATA": "HND",
+    "destinationIATA": "CTU",
+    "airline": "Qatar",
+    "aircraftID": "LDY2EW9R3RTU83954"
+  },
+  {
+    "flightNumber": "79536",
+    "originIATA": "TXL",
+    "destinationIATA": "EBB",
+    "airline": "British Airways",
+    "aircraftID": "K5RTG4748FJU59289"
+  },
+  {
+    "flightNumber": "30154",
+    "originIATA": "CLT",
+    "destinationIATA": "SDU",
+    "airline": "Emirates",
+    "aircraftID": "NJXJDC8CTKM493546"
+  },
+  {
+    "flightNumber": "56790",
+    "originIATA": "FOR",
+    "destinationIATA": "ATL",
+    "airline": "Emirates",
+    "aircraftID": "YDGZH85VSZGY14453"
+  },
+  {
+    "flightNumber": "72716",
+    "originIATA": "MNL",
+    "destinationIATA": "ADD",
+    "airline": "American",
+    "aircraftID": "8LP85GG0V3BT77414"
+  },
+  {
+    "flightNumber": "73215",
+    "originIATA": "SGN",
+    "destinationIATA": "CKG",
+    "airline": "American",
+    "aircraftID": "HE7N142RTPWV73457"
+  },
+  {
+    "flightNumber": "14798",
+    "originIATA": "ORN",
+    "destinationIATA": "BEL",
+    "airline": "LATAM",
+    "aircraftID": "W1Z93P5UCDKX34250"
+  },
+  {
+    "flightNumber": "66927",
+    "originIATA": "BOM",
+    "destinationIATA": "HAV",
+    "airline": "LATAM",
+    "aircraftID": "21S20FU8G3DB71203"
+  },
+  {
+    "flightNumber": "82982",
+    "originIATA": "ZRH",
+    "destinationIATA": "TSV",
+    "airline": "Qatar",
+    "aircraftID": "GSZ5PP4ST4NJ50269"
+  },
+  {
+    "flightNumber": "34646",
+    "originIATA": "WLG",
+    "destinationIATA": "BEL",
+    "airline": "Qatar",
+    "aircraftID": "J17XS3DAGMHW18565"
+  },
+  {
+    "flightNumber": "95408",
+    "originIATA": "MUC",
+    "destinationIATA": "DRW",
+    "airline": "Qatar",
+    "aircraftID": "HLL0ZAUBAUYP28866"
+  },
+  {
+    "flightNumber": "51812",
+    "originIATA": "CAI",
+    "destinationIATA": "AYT",
+    "airline": "British Airways",
+    "aircraftID": "4BXDHG370YZC80991"
+  },
+  {
+    "flightNumber": "17257",
+    "originIATA": "ADD",
+    "destinationIATA": "SLC",
+    "airline": "American",
+    "aircraftID": "5GXBT9K7JZFR65648"
+  },
+  {
+    "flightNumber": "34539",
+    "originIATA": "EZE",
+    "destinationIATA": "SZX",
+    "airline": "American",
+    "aircraftID": "ZKFD46PKDSJ756530"
+  },
+  {
+    "flightNumber": "20502",
+    "originIATA": "LIS",
+    "destinationIATA": "PHL",
+    "airline": "Iberia",
+    "aircraftID": "KHHSWBRMZ0NW54858"
+  },
+  {
+    "flightNumber": "45980",
+    "originIATA": "DUR",
+    "destinationIATA": "GDL",
+    "airline": "Emirates",
+    "aircraftID": "BV9KCFGT7RSP73319"
+  },
+  {
+    "flightNumber": "62905",
+    "originIATA": "RAK",
+    "destinationIATA": "WLG",
+    "airline": "LATAM",
+    "aircraftID": "RHT1JTD66LH413322"
+  },
+  {
+    "flightNumber": "27112",
+    "originIATA": "DJE",
+    "destinationIATA": "JFK",
+    "airline": "American",
+    "aircraftID": "JX166FXMN2NF28003"
+  },
+  {
+    "flightNumber": "99888",
+    "originIATA": "CDG",
+    "destinationIATA": "HGH",
+    "airline": "British Airways",
+    "aircraftID": "KA70X71G2UMA46607"
+  },
+  {
+    "flightNumber": "55884",
+    "originIATA": "HBA",
+    "destinationIATA": "ARN",
+    "airline": "LATAM",
+    "aircraftID": "MF729MBC1MSY92131"
+  },
+  {
+    "flightNumber": "95384",
+    "originIATA": "GDL",
+    "destinationIATA": "KUL",
+    "airline": "Qatar",
+    "aircraftID": "H8NXZYEGY7B725626"
+  },
+  {
+    "flightNumber": "57801",
+    "originIATA": "HBA",
+    "destinationIATA": "TUN",
+    "airline": "British Airways",
+    "aircraftID": "KXG7YPG4B2UR30935"
+  },
+  {
+    "flightNumber": "42640",
+    "originIATA": "RAK",
+    "destinationIATA": "EZE",
+    "airline": "Emirates",
+    "aircraftID": "0V6JEBJG44PP29755"
+  },
+  {
+    "flightNumber": "90863",
+    "originIATA": "DRW",
+    "destinationIATA": "CPT",
+    "airline": "Emirates",
+    "aircraftID": "PVUZPRYLF0Z587402"
+  }
+]
