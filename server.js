@@ -252,33 +252,31 @@ app.get('/api/passengers/:flightNumber', async (req, res) => {
 });
 
 
-
-
-
-
-
 app.get('/api/flights', async (req, res) => {
-    const flights = await getFlightsData();
     try {
-        let processedFlightsPromises = flights.map(async flight => {
+        const flights = await getFlightsData();
+        let pageNumber = parseInt(req.query.page, 10) || 1;
+        let pageSize = 15;
+
+        // Calculate the range for the current page
+        let startIndex = (pageNumber - 1) * pageSize;
+        let endIndex = startIndex + pageSize;
+
+        // Process only the flights necessary for the current page
+        let processedFlightsPromises = flights.slice(startIndex, endIndex).map(async flight => {
             let aircraft = aircraftsData.find(ac => ac.aircraftID === flight.aircraftID);
             let originAirport = airportsData.find(ap => ap.airportIATA === flight.originIATA);
             let destinationAirport = airportsData.find(ap => ap.airportIATA === flight.destinationIATA);
             let flightPassengers = ticketsData
-                .filter(ticket => ticket.flightNumber === flight.flightNumber) // Make sure the property name is correct
+                .filter(ticket => ticket.flightNumber === flight.flightNumber)
                 .map(ticket => {
-                    // Access the `passengers` array inside the `passengersData` object
                     return passengersData.passengers.find(p => p.passengerID === ticket.passengerID);
                 })
-                .filter(passenger => passenger != null); // Filter out any undefined or null entries
+                .filter(passenger => passenger != null);
 
-            // Calcula la edad promedio de los pasajeros
             let averageAge = flightPassengers.reduce((sum, passenger) => sum + getAge(passenger.birthDate), 0) / flightPassengers.length;
-            // console.log("esta es la info del flight")
-            // console.log(flightPassengers)
-            // console.log(averageAge)
-            // Calcula la distancia recorrida
             let distance = calculateDistance(originAirport.lat, originAirport.lon, destinationAirport.lat, destinationAirport.lon);
+
             return {
                 ...flight,
                 originAirport: originAirport.name,
@@ -291,24 +289,22 @@ app.get('/api/flights', async (req, res) => {
             };
         });
 
-        // Ordena y paginación
         let processedFlights = await Promise.all(processedFlightsPromises);
-        let pageNumber = parseInt(req.query.page, 10) || 1;
-        let pageSize = 15;
-        let paginatedFlights = paginate(processedFlights, pageNumber, pageSize)
+
         res.json({
             currentPage: pageNumber,
             pageSize: pageSize,
-            totalItems: processedFlights.length,
-            totalPages: Math.ceil(processedFlights.length / pageSize),
-            flights: paginatedFlights
+            totalItems: flights.length,
+            totalPages: Math.ceil(flights.length / pageSize),
+            flights: processedFlights
         });
-        
+
     } catch (error) {
         console.error('Error in /api/flights:', error);
         res.status(500).send('Error processing flight data');
     }
 });
+
 
 function paginate(array, page_number, page_size) {
     return array.slice((page_number - 1) * page_size, page_number * page_size);
